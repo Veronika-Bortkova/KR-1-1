@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test-1</title>
+    <link rel="stylesheet" href="rest.css">
+    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style-769px-1279px.css">
+    <link rel="stylesheet" href="style-481px-768px.css">
+    <link rel="stylesheet" href="style-0px-480px.css">
+</head>
+<body>
+<div class="wrapper">
+    <h1>Test</h1>
+    <form id="formNameValuePair">
+        <div id="divLabelInput" >
+            <label for="NameValuePair">Enter the Name/Value pair in the format Name=Value, where both name and value may contain only letters and digits.</label>
+            <input type="text" name="NameValuePair" id="NameValuePair" placeholder="Name=Value">
+        </div>
+        <button id="buttonAdd">Add</button>
+    </form>
+    <div id="inCorrectFormat" ><!--  Enter the information in the correct format--></div>
+    <h4>Name/Value Pair List</h4>
+    <p id="texForFieldAndroid">(Tap the field below &#8595; to view the full list and select pairs)</p>
+    <div id="wrapperOutputFieldButtons">
+        <div id="outputField">
+            <select id="myList" multiple></select>
+        </div>
+        <div id="wrapperButtons">
+            <button id="SortByName">Sort by Name</button>
+            <button id="SortByValue">Sort by Value</button>
+            <button id="delete">Delete</button>
+            <div id="deleteText">
+                <p>(Ctrl+Click to select, Delete to remove)</p>
+            </div>
+            <div id="deleteTextForAndroid">
+                <p>(Delete selected)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
