@@ -1,42 +1,42 @@
 @media screen and (min-width: 769px) and (max-width: 1279px) {(min-width: 769px) and (max-width: 1279px)
 
-    body {
-        font-size: 16px;
-        padding-top: env(safe-area-inset-top);
-        padding-bottom: env(safe-area-inset-bottom);
-        min-height: 100vh;
-    }
+/*    body {*/
+/*        font-size: 16px;*/
+/*        padding-top: env(safe-area-inset-top);*/
+/*        padding-bottom: env(safe-area-inset-bottom);*/
+/*        min-height: 100vh;*/
+/*    }*/
 
 
-    .wrapper {
-        width: 740px;
-    }
+/*    .wrapper {*/
+/*        width: 740px;*/
+/*    }*/
 
-    h1, h4 {
-        width: 670px;
-    }
+/*    h1, h4 {*/
+/*        width: 670px;*/
+/*    }*/
 
-    form, #inCorrectFormat {
-        width: 670px;
+/*    form, #inCorrectFormat {*/
+/*        width: 670px;*/
 
-    }
+/*    }*/
 
 
-    form input::placeholder {
-        font-size: 20px;
-    }
+/*    form input::placeholder {*/
+/*        font-size: 20px;*/
+/*    }*/
 
-    input{
-        height: 35px;
-        font-size: 20px;
-    }
-    #wrapperOutputFieldButtons {
-        width: 670px;
-    }
-    option{
-        font-size: 18px;
-    }
-    #deleteTextForAndroid{
-        display: none;
-    }
-}
+/*    input{*/
+/*        height: 35px;*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    #wrapperOutputFieldButtons {*/
+/*        width: 670px;*/
+/*    }*/
+/*    option{*/
+/*        font-size: 18px;*/
+/*    }*/
+/*    #deleteTextForAndroid{*/
+/*        display: none;*/
+/*    }*/
+/*}*/
