@@ -129,7 +129,7 @@ h4{
     font-size: 0.9rem;
     margin-top: -0.5rem;
     color: #5c5c5c;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #outputField{
