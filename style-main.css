@@ -10,62 +10,61 @@ body{
     font-size: 1.25rem;
     min-height: 100vh;   /* fallback для старых браузеров */
     min-height: 100dvh;
-
 }
-
 .wrapper{
-    width: 60%;
+    width: 55%;
+    min-height: 90vh;
     background: #ffffff;
     margin: 1.5rem auto;
     border-radius: 5px;
     padding: 4rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 #wrapperTopBlok{
     width: 100%;/*от wrapper*/
-    height: 40%;
-    background: #c5ffa1;
-    padding-right: 10%;
-}
-h1{
-    margin-bottom: 2rem;
 }
 
-/*h1{*/
-/*    padding-top: 20px;*/
-/*    margin: 0 auto 25px auto;*/
-/*}*/
-/*h4, #textForAndroid{*/
-/*    margin: 0 auto 5px auto;*/
-/*}*/
+h1{
+    margin-bottom: 1.5rem;
+}
 #texForFieldAndroid {
     display: none;
 }
 form{
     width: 100%;/* от wrapper*/
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr auto;
+    gap: 0.3rem 0;
     color: #5c5c5c;
     margin-bottom: 0.3rem;
 }
+form>label{
+    width: 85%;
+    text-align: justify;
+}
+#InputNameValuePair{
+    grid-column: 1;
+    grid-row: 2;
+    width: 85%;
+}
+#buttonAdd{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+}
+
 #inCorrectFormat{
     width: 75%;/* от wrapper*/
     color: #f41919;
     font-weight: 500;
     text-align: justify;
-}
-#divLabelInput{
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    justify-content: start;
-    align-items: start;
-    width: 75%;/*от формы и wrapperTopBlok они равны*/
-    text-align: justify;
+    margin-bottom: 2rem;
+    min-height: 1.5rem;
 }
 input{
     height: 2.5rem;
-/*    line-height: 40px;*/
     padding: 0.5rem;
     width: 100%;/*от лейбли*/
     border-radius: 3px;
@@ -73,13 +72,11 @@ input{
     border: 2px solid #b6b6b6;
     font-size: 2rem;
 }
-
 form input::placeholder{
     font-weight: 400;
     font-size: 2rem;
     color: #C0C0C0;
 }
-
 button{
     font-size: 1rem;
     font-weight: 600;
@@ -92,75 +89,72 @@ button{
 button:focus {
     outline: none;
 }
-/*#buttonAdd{*/
-/*    margin-right: 70px;*/
-/*}*/
-/*button:hover{*/
-/*    color: #000000;*/
-/*    !*text-shadow: 0 1px 10px rgb(67, 67, 67);*!*/
-/*    border: 2px solid #707070;*/
-/*    transition: 0.2s;*/
-/*}*/
-/*button:active{*/
-/*    transform: scale(0.8);*/
-/*    transition: 0.5s;*/
+button:hover{
+    color: #000000;
+    border: 2px solid #707070;
+    transition: 0.2s;
+}
+button:active{
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+/*---------------------------------------------------------------------------*/
+#wrapperBottomBlok{
+    width: 100%;
+    }
 
-/*}*/
-/*#wrapperOutputFieldButtons{*/
-/*    height: 200px;*/
-/*    margin: 0 auto;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: start;*/
-/*}*/
-/*#wrapperButtons{*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: start;*/
-/*    align-items: flex-end;*/
-/*    gap: 15px;*/
-/*}*/
+#wrapperOutputFieldButtons {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
 
-/*#wrapperButtons>button {*/
-/*    align-self: flex-end;*/
-/*}*/
+h4{
+    margin-bottom: 0.5rem;
+}
 
+#wrapperButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 1rem;
+}
 
-/*#delete{*/
-/*    margin: 20px 52px 0 0 ;*/
-/*}*/
-/*#deleteText{*/
-/*    width: 150px;*/
-/*    font-size: 14px;*/
-/*    margin-top: -10px;*/
-/*    color: #5c5c5c;*/
-/*}*/
-/*#deleteText>p{*/
-/*    text-align: center;*/
-/*}*/
-/*#outputField{*/
-/*    width: 440px;*/
-/*    background: #ffffff;*/
-/*    border: 2px solid #b6b6b6;*/
-/*    height: 200px;*/
-/*    border-radius: 3px;*/
-/*    overflow-wrap: break-word;*/
-/*    white-space: normal;*/
-/*}*/
-/*option{*/
-/*    font-size: 20px;*/
-/*}*/
-/*#myList {*/
-/*    border: none;*/
-/*    outline: none;*/
-/*    background: transparent;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    font-size: 16px;*/
-/*}*/
-/*#deleteTextForAndroid{*/
-/*    display: none;*/
-/*}*/
+#delete{
+    margin-top: 1.5rem;
+}
+#deleteText{
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+    color: #5c5c5c;
+    text-align: center;
+}
+
+#outputField{
+    width: 85%;
+    background: #ffffff;
+    border: 2px solid #b6b6b6;
+    height: 100%;
+    border-radius: 3px;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+option{
+    font-size: 1.25rem;
+}
+#myList {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+#deleteTextForAndroid{
+    display: none;
+}
 
 
 

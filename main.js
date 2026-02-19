@@ -1,17 +1,23 @@
 let form = document.getElementById("formNameValuePair");
 let selectNameValue = document.getElementById("myList");
-let inputNameValuePair = document.getElementById("NameValuePair");
+let inputNameValuePair = document.getElementById("InputNameValuePair");
 let buttonAdd = document.getElementById("buttonAdd");
 let DivInCorrectFormat = document.getElementById("inCorrectFormat");
 let btns = document.getElementsByTagName("button");
+let input = document.getElementById("InputNameValuePair");
+    input.addEventListener("dblclick", function (){//настраиваю, чтобыпо двойному щелчку ЛКМ выделялось все содержание инпута
+        this.select();
+    });
+
 for (const btn of btns) {
-    btn.addEventListener("touchstart", () => {// настройки вида кнопок при нажатии прописанные в css срабатывают не во всех браузерах, поэтому добавляю здесь
+    btn.addEventListener("touchstart", () => {// настройки скейла кнопок при нажатии прописанные в css срабатывают не во всех браузерах, поэтому добавляю здесь
         btn.style.transform = "scale(0.8)";
     });
     btn.addEventListener("touchend", () => {
         btn.style.transform = "scale(1)";
     });
 }
+
 
 form.addEventListener("submit",function (ev){
     ev.preventDefault();

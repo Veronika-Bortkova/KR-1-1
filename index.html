@@ -18,33 +18,33 @@
     <div id="wrapperTopBlok">
         <h1>Test</h1>
         <form id="formNameValuePair">
-            <div id="divLabelInput" >
+<!--            <div id="divLabelInput" >-->
                 <label for="NameValuePair">Enter the Name/Value pair in the format Name=Value, where both name and value may contain only letters and digits.</label>
-                <input type="text" name="NameValuePair" id="NameValuePair" placeholder="Name=Value">
-            </div>
+                <input type="text" name="NameValuePair" id="InputNameValuePair" placeholder="Name=Value">
+<!--            </div>-->
             <button id="buttonAdd">Add</button>
         </form>
         <div id="inCorrectFormat" ><!--  Enter the information in the correct format--></div>
     </div>
     <div id="wrapperBottomBlok">
-        <h4>Name/Value Pair List</h4>
-        <p id="texForFieldAndroid">(Tap the field below &#8595; to view the full list and select pairs)</p>
-        <div id="wrapperOutputFieldButtons">
-            <div id="outputField">
-                <select id="myList" multiple></select>
-            </div>
-            <div id="wrapperButtons">
-                <button id="SortByName">Sort by Name</button>
-                <button id="SortByValue">Sort by Value</button>
-                <button id="delete">Delete</button>
-                <div id="deleteText">
-                    <p>(Ctrl+Click to select, Delete to remove)</p>
+            <h4>Name/Value Pair List</h4>
+            <p id="texForFieldAndroid">(Tap the field below &#8595; to view the full list and select pairs)</p>
+            <div id="wrapperOutputFieldButtons">
+                <div id="outputField">
+                    <select id="myList" multiple></select>
                 </div>
-                <div id="deleteTextForAndroid">
-                    <p>(Delete selected)</p>
-                </div>
+                <div id="wrapperButtons">
+                    <button id="SortByName">Sort by Name</button>
+                    <button id="SortByValue">Sort by Value</button>
+                    <button id="delete">Delete</button>
+                    <div id="deleteText">
+                        <p>(Ctrl+Click to select, Delete to remove)</p>
+                    </div>
+                    <div id="deleteTextForAndroid">
+                        <p>(Delete selected)</p>
+                    </div>
+                 </div>
             </div>
-        </div>
     </div>
 </div>
 
