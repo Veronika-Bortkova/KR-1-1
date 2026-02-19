@@ -1,4 +1,60 @@
 @media screen and (min-width: 769px) and (max-width: 1279px) {
+    .wrapper{
+        width: 85%;
+        padding: 2rem;
+    }
+    form {
+
+        grid-template-columns: 75% 25%;
+    }
+    input{
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+    #inCorrectFormat{
+        width: 64%;/* от wrapper*/
+        min-height: 1.5rem;
+    }
+    form input::placeholder{
+        font-size: 1.5rem;
+    }
+    #wrapperOutputFieldButtons {
+        grid-template-columns: 75% 25%;
+        max-height: 93%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*body {*/
     /*    font-size: 16px;*/
     /*    padding-top: env(safe-area-inset-top);*/
