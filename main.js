@@ -7,6 +7,8 @@ let btns = document.getElementsByTagName("button");
 let input = document.getElementById("InputNameValuePair");
 let divDeleteText = document.getElementById("deleteText");
 let pTexForFieldAndroid = document.getElementById("texForFieldAndroid");
+
+
     input.addEventListener("dblclick", function (){//настраиваю, чтобы по двойному щелчку ЛКМ выделялось все содержание инпута
         this.select();
     });

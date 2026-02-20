@@ -155,6 +155,13 @@ option{
 #deleteTextForAndroid{
     display: none;
 }
+#texForFieldAndroid{
+    display: block;
+    width: 64%;/* от wrapper*/
+    /*min-height: 1.5rem;*/
+    text-align: justify;
+    color: #5c5c5c;
+}
 
 
 
