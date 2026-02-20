@@ -12,14 +12,14 @@ let pTexForFieldAndroid = document.getElementById("texForFieldAndroid");
     input.addEventListener("dblclick", function (){//настраиваю, чтобы по двойному щелчку ЛКМ выделялось все содержание инпута
         this.select();
     });
-// if (navigator.userAgentData.mobile||/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-// ){
-//     divDeleteText.innerText = "(Delete selected)";
-//     pTexForFieldAndroid.innerText = "(Tap the field below ↓ to view the full list and select pairs)";
-// } else {
-//     divDeleteText.innerText = "(Ctrl+Click to select, Delete to remove)";
-//     pTexForFieldAndroid.innerText = "";
-// }
+if (navigator.userAgentData.mobile||/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+){
+    divDeleteText.innerText = "(Delete selected)";
+    pTexForFieldAndroid.innerText = "(Tap the field below ↓ to view the full list and select pairs)";
+} else {
+    divDeleteText.innerText = "(Ctrl+Click to select, Delete to remove)";
+    pTexForFieldAndroid.innerText = "";
+}
 
 for (const btn of btns) {
     btn.addEventListener("touchstart", () => {// настройки скейла кнопок при нажатии прописанные в css срабатывают не во всех браузерах, поэтому добавляю здесь
