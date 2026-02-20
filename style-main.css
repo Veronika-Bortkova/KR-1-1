@@ -28,9 +28,9 @@ body{
 h1{
     margin-bottom: 1.5rem;
 }
-#texForFieldAndroid {
-    display: none;
-}
+/*#texForFieldAndroid {*/
+/*    display: none;*/
+/*}*/
 form{
     width: 100%;/* от wrapper*/
     display: grid;
