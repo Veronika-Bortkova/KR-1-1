@@ -22,7 +22,18 @@
         grid-template-columns: 75% 25%;
         max-height: 93%;
     }
+    #texForFieldAndroid{
+        display: block;
+        width: 64%;/* от wrapper*/
+        /*min-height: 1.5rem;*/
+        text-align: justify;
+        color: #5c5c5c;
+    }
 
+    #wrapperOutputFieldButtons {
+        height: 80%;
+        width: 100%;
+    }
 
 
 

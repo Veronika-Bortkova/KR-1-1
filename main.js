@@ -5,9 +5,18 @@ let buttonAdd = document.getElementById("buttonAdd");
 let DivInCorrectFormat = document.getElementById("inCorrectFormat");
 let btns = document.getElementsByTagName("button");
 let input = document.getElementById("InputNameValuePair");
-    input.addEventListener("dblclick", function (){//настраиваю, чтобыпо двойному щелчку ЛКМ выделялось все содержание инпута
+let divDeleteText = document.getElementById("deleteText");
+let pTexForFieldAndroid = document.getElementById("texForFieldAndroid");
+    input.addEventListener("dblclick", function (){//настраиваю, чтобы по двойному щелчку ЛКМ выделялось все содержание инпута
         this.select();
     });
+if (navigator.userAgentData.mobile){
+    divDeleteText.innerText = "(Delete selected)";
+    pTexForFieldAndroid = "(Tap the field below ↓ to view the full list and select pairs)";
+} else {
+    divDeleteText.innerText = "(Ctrl+Click to select, Delete to remove)";
+    pTexForFieldAndroid = "";
+}
 
 for (const btn of btns) {
     btn.addEventListener("touchstart", () => {// настройки скейла кнопок при нажатии прописанные в css срабатывают не во всех браузерах, поэтому добавляю здесь
@@ -43,3 +52,5 @@ form.addEventListener("submit",function (ev){
                      }
             }
 })
+
+
