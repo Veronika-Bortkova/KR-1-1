@@ -13,7 +13,7 @@
     }
     #inCorrectFormat{
         width: 64%;/* от wrapper*/
-        min-height: 1.5rem;
+        min-height: 3rem;
     }
     form input::placeholder{
         font-size: 1.5rem;
