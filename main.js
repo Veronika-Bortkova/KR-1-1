@@ -14,10 +14,10 @@ let pTexForFieldAndroid = document.getElementById("texForFieldAndroid");
     });
 if (navigator.userAgentData.mobile){
     divDeleteText.innerText = "(Delete selected)";
-    pTexForFieldAndroid = "(Tap the field below ↓ to view the full list and select pairs)";
+    pTexForFieldAndroid.innerText = "(Tap the field below ↓ to view the full list and select pairs)";
 } else {
     divDeleteText.innerText = "(Ctrl+Click to select, Delete to remove)";
-    pTexForFieldAndroid = "";
+    pTexForFieldAndroid.innerText = "";
 }
 
 for (const btn of btns) {
