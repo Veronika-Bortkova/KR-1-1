@@ -12,7 +12,8 @@ let pTexForFieldAndroid = document.getElementById("texForFieldAndroid");
     input.addEventListener("dblclick", function (){//настраиваю, чтобы по двойному щелчку ЛКМ выделялось все содержание инпута
         this.select();
     });
-if (navigator.userAgentData.mobile){
+if (navigator.userAgentData.mobile||/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+){
     divDeleteText.innerText = "(Delete selected)";
     pTexForFieldAndroid.innerText = "(Tap the field below ↓ to view the full list and select pairs)";
 } else {
@@ -41,7 +42,7 @@ form.addEventListener("submit",function (ev){
             }
         }
             if (arrNumberEqualSigns.length!=1){
-                DivInCorrectFormat.innerText = "Enter the information in the correct format";// если в строке нет знака "=" или их больше одного, выдаю сообщение об ошибке
+                DivInCorrectFormat.innerText = "Enter the information in the correct format!";// если в строке нет знака "=" или их больше одного, выдаю сообщение об ошибке
             } else {
                 let Name_Value = value.split("=");
                 if (!/^[\p{L}\p{N}][\p{L}\p{N}]*\s*$/u.test(Name_Value[0]) || !/^\s*[\p{L}\p{N}]+$/u.test(Name_Value[1])){//делаю проверку строк до знака равно и после. Строка находящаяся до знака "=" должна начинаться только с численно-буквенных символов, далее содержать любое (в том числе ноль) кол-во буквенно-числовых символов, конец строки - любое кол-во пробелов. После знака "=" строка должна начинаться с любого кол-ва пробелов (в том числе ноль - ни одного пробела), далее любое кол-во буквенно-численных символов, но не менее одного символа. Юникод флаг для того чтобы работало для букв и чисел любого алфавита.
