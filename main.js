@@ -13,7 +13,7 @@ let pTexForFieldAndroid = document.getElementById("texForFieldAndroid");
         this.select();
     });
 if ((navigator.userAgentData && navigator.userAgentData.mobile||/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-){
+)){
     divDeleteText.innerText = "(Delete selected)";
     pTexForFieldAndroid.innerText = "(Tap the field below ↓ to view the full list and select pairs)";
 } else {
