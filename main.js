@@ -13,7 +13,7 @@ let pTexForFieldAndroid = document.getElementById("texForFieldAndroid");
         this.select();
     });
 if ((navigator.userAgentData && navigator.userAgentData.mobile||/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-)){
+)){//делаю проверку на то с какого устройства открыто приложение, что бы поставить разный текст у поля и кнопок на декстопе и мобильных устройствах (из-за того, что селект мультиплай отображается (заменяется) на мобильных браузерах не так, как на декстопе). Сделать это без джаваскрипта только брекпоинтами не получается, потому что брекпоинты мобильных устройств и лаптопов пересекаются. Делаю проверку по userAgentData и по userAgent потому что userAgentData поддерживается не всеми браузерами
     divDeleteText.innerText = "(Delete selected)";
     pTexForFieldAndroid.innerText = "(Tap the field below ↓ to view the full list and select pairs)";
 } else {
