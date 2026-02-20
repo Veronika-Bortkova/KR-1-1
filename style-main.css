@@ -140,6 +140,7 @@ h4{
     border-radius: 3px;
     overflow-wrap: break-word;
     white-space: normal;
+    max-height: 90%;
 }
 option{
     font-size: 1.25rem;

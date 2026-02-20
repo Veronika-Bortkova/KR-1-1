@@ -20,7 +20,7 @@
     }
     #wrapperOutputFieldButtons {
         grid-template-columns: 75% 25%;
-        max-height: 93%;
+        max-height: 90%;
     }
 
     /*#wrapperOutputFieldButtons {*/
