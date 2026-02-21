@@ -1,143 +1,38 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
-    .wrapper{
+    .wrapper {
         width: 90%;
         padding: 2rem;
     }
-    body{
+
+    body {
 
         font-size: 1rem;
     }
-    input{
+
+    input {
         height: 2rem;
         font-size: 1.25rem;
     }
-    form input::placeholder{
+
+    form input::placeholder {
         font-size: 1.25rem;
     }
 
-    form{
+    form {
         grid-template-columns: 65% 35%;
         grid-template-rows: 1fr auto;
         gap: 0.3rem 0;
     }
-    #inCorrectFormat{
-        width: 54%;/* от wrapper*/
+
+    #inCorrectFormat {
+        width: 54%; /* от wrapper*/
         min-height: 2.42rem;
         margin-bottom: 0.5rem;
     }
+
     #wrapperOutputFieldButtons {
         grid-template-columns: 65% 35%;
         max-height: 95%;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*    body {*/
-    /*        font-size: 16px;*/
-    /*    }*/
-    /*    .wrapper {*/
-    /*        width: 440px;*/
-    /*        padding: 30px;*/
-    /*    }*/
-    /*    h1, h4 {*/
-    /*        width: 370px;*/
-    /*    }*/
-    /*    form, #inCorrectFormat {*/
-    /*        width: 370px;*/
-    /*    }*/
-    /*    form input::placeholder {*/
-    /*        font-size: 20px;*/
-    /*    }*/
-    /*    #divLabelInput, #inCorrectFormat{*/
-    /*        width: 220px;*/
-    /*    }*/
-    /*    #inCorrectFormat{*/
-    /*        margin: 0 0 30px 5px;*/
-    /*    }*/
-    /*    input{*/
-    /*        width: 220px;*/
-    /*        font-size: 20px;*/
-    /*    }*/
-    /*    #buttonAdd{*/
-    /*        margin-right: 70px;*/
-    /*    }*/
-    /*    input{*/
-    /*        height: 40px;*/
-    /*        font-size: 20px;*/
-    /*    }*/
-    /*    #wrapperOutputFieldButtons {*/
-    /*        width: 370px;*/
-    /*        height: 290px;*/
-    /*    }*/
-    /*    #outputField {*/
-    /*        width: 220px;*/
-    /*        height: 100%;*/
-    /*    }*/
-    /*    button {*/
-    /*        padding: 5px 5px;*/
-    /*    }*/
-    /*    option{*/
-    /*        font-size: 16px;*/
-    /*    }*/
-    /*    #deleteText{*/
-    /*        display: none;*/
-    /*    }*/
-    /*    #deleteTextForAndroid{*/
-    /*        display: block;*/
-    /*        width: 150px;*/
-    /*        font-size: 14px;*/
-    /*        margin-top: -10px;*/
-    /*        color: #5c5c5c;*/
-    /*    }*/
-    /*    #deleteTextForAndroid>p{*/
-    /*        text-align: center;*/
-    /*    }*/
-    /*    #texForFieldAndroid {*/
-    /*        color: #5c5c5c;*/
-    /*        font-size: 16px;*/
-    /*        display: block;*/
-    /*        margin-left: 5px;*/
-    /*        width: 220px;*/
-    /*        text-align: justify;*/
-    /*    }*/
-    /*}*/
 }

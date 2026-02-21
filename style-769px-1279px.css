@@ -1,95 +1,31 @@
 @media screen and (min-width: 769px) and (max-width: 1279px) {
-    .wrapper{
+    .wrapper {
         width: 85%;
         padding: 2rem;
     }
+
     form {
 
         grid-template-columns: 75% 25%;
     }
-    input{
+
+    input {
         height: 2rem;
         font-size: 1.5rem;
     }
-    #inCorrectFormat{
-        width: 64%;/* от wrapper*/
+
+    #inCorrectFormat {
+        width: 64%; /* от wrapper*/
         min-height: 3rem;
         margin-bottom: 0.5rem;
     }
-    form input::placeholder{
+
+    form input::placeholder {
         font-size: 1.5rem;
     }
+
     #wrapperOutputFieldButtons {
         grid-template-columns: 75% 25%;
         max-height: 85%;
     }
-
-    /*#wrapperOutputFieldButtons {*/
-    /*    height: 80%;*/
-    /*    width: 100%;*/
-    /*}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*body {*/
-    /*    font-size: 16px;*/
-    /*    padding-top: env(safe-area-inset-top);*/
-    /*        padding-bottom: env(safe-area-inset-bottom);*/
-    /*        min-height: 100vh;*/
-    /*    }*/
-    /*    .wrapper {*/
-    /*        width: 740px;*/
-    /*    }*/
-    /*    h1, h4 {*/
-    /*        width: 670px;*/
-    /*    }*/
-    /*    form, #inCorrectFormat {*/
-    /*        width: 670px;*/
-    /*    }*/
-    /*    form input::placeholder {*/
-    /*        font-size: 20px;*/
-    /*    }*/
-    /*    input{*/
-    /*        height: 35px;*/
-    /*        font-size: 20px;*/
-    /*    }*/
-    /*    #wrapperOutputFieldButtons {*/
-    /*        width: 670px;*/
-    /*    }*/
-    /*    option{*/
-    /*        font-size: 18px;*/
-    /*    }*/
-    /*    #deleteTextForAndroid{*/
-    /*        display: none;*/
-    /*    }*/
-    /*}*/
 }

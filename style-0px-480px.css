@@ -1,108 +1,81 @@
 @media screen and (max-width: 480px) {
-    /*    body {*/
-    /*        font-size: 16px;*/
-    /*    }*/
-    /*    .wrapper {*/
-    /*        width: 320px;*/
-    /*        padding: 10px;*/
-    /*        margin: 10px auto;*/
-    /*    }*/
-    /*    h1, h4 {*/
-    /*        width: 300px;*/
-    /*    }*/
-    /*    #textForAndroid {*/
-    /*        color: #5c5c5c;*/
-    /*        font-size: 16px;*/
-    /*        display: block;*/
-    /*        width: 300px;*/
-    /*        text-align: justify;*/
-    /*    }*/
-    /*    h1{*/
-    /*        margin: 0 auto 10px auto;*/
-    /*        padding-top: 0;*/
-    /*    }*/
-    /*    form {*/
-    /*        width: 300px;*/
-    /*        display: block;*/
-    /*        margin: 10px auto 5px auto;*/
-    /*    }*/
-    /*    #divLabelInput{*/
-    /*        width: 300px;*/
-    /*}*/
-    /*    #buttonAdd{*/
-    /*        margin-top: 10px;*/
-    /*        margin-right: 0;*/
-    /*        width: 80px;*/
-    /*    }*/
-    /*    form input::placeholder {*/
-    /*        font-size: 20px;*/
-    /*    }*/
-    /*    #divLabelInput{*/
-    /*        width: 300px;*/
-    /*    }*/
-    /*    input{*/
-    /*        width: 300px;*/
-    /*        font-size: 20px;*/
-    /*        height: 40px;*/
-    /*    }*/
-    /*    #inCorrectFormat, #deleteTextForAndroid>p{*/
-    /*        font-size: 14px;*/
-    /*        width: auto;*/
-    /*    }*/
-    /*    #inCorrectFormat{*/
-    /*        margin: 0 auto 10px auto;*/
-    /*    }*/
-    /*    button {*/
-    /*        font-size: 18px;*/
-    /*    }*/
-    /*#wrapperOutputFieldButtons{*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    width: 300px;*/
-    /*    height: 350px;*/
-    /*    gap: 5px;*/
-    /*}*/
-    /*#wrapperButtons {*/
-    /*    display: flex;*/
-    /*    flex-direction: row;*/
-    /*    justify-content: space-between;*/
-    /*    align-items: start;*/
-    /*    flex-wrap: wrap;*/
-    /*    gap: 10px;*/
-    /*    margin-top: 5px;*/
-    /*}*/
-    /*    #outputField{*/
-    /*        width: 300px;*/
-    /*        background: #ffffff;*/
-    /*        border: 2px solid #b6b6b6;*/
-    /*        border-radius: 3px;*/
-    /*        height: 220px;*/
-    /*    }*/
-    /*    #delete{*/
-    /*        margin-top: 10px;*/
-    /*        margin-left: 115px;*/
-    /*    }*/
-    /*    option{*/
-    /*        font-size: 18px;*/
-    /*    }*/
-    /*    #deleteText{*/
-    /*        display: none;*/
-    /*    }*/
-    /*    #deleteTextForAndroid{*/
-    /*        display: block;*/
-    /*        width: 150px;*/
-    /*        font-size: 14px;*/
-    /*        margin: -5px 0 0 70px;*/
-    /*        color: #5c5c5c;*/
-    /*    }*/
-    /*    #deleteTextForAndroid>p {*/
-    /*        text-align: center;*/
-    /*    }*/
-    /*    #texForFieldAndroid {*/
-    /*        color: #5c5c5c;*/
-    /*        font-size: 16px;*/
-    /*        display: block;*/
-    /*    }*/
-    /*}*/
+    body{
+        font-size: 1rem;
+    }
+    .wrapper{
+        width: 85%;
+        padding: 0.6rem;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        min-height: 90vh;
+    }
+    h1{
+        margin-bottom: 0.5rem;
+        font-size: 2.2em;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
 
+    }
+    form>label{
+        width: 100%;
+    }
+    #InputNameValuePair{
+        width: 100%;
+    }
+    input{
+        font-size: 1.25rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    form input::placeholder{
+        font-size: 1.25rem;
+    }
+    #buttonAdd{
+        width: auto;
+        align-self: start;
+    }
+    button{
+        font-size: 1.1rem;
+    }
+    #inCorrectFormat{
+        width: 100%;/* от wrapper*/
+        min-height: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+/*--------------------------------------------------------------------*/
+    h4{
+        font-size: 1.1rem;
+    }
+    #wrapperBottomBlok{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+        /*height: 100%;*/
+    }
+    h4,#texForFieldAndroid{
+        grid-area: 1;
+    }
+
+    #wrapperOutputFieldButtons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-area: 2;
+        /*min-height: 50%;*/
+    }
+    #wrapperButtons{
+        display: flex;
+        flex-direction: column;
+    }
+    #outputField{
+        width: 100%;
+        margin-bottom: 0.5rem;
+        /*min-height: 10%;*/
+    }
+    #delete{
+        margin-top: 1.2rem;
+    }
 }
