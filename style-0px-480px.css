@@ -60,6 +60,7 @@
     }
     #texForFieldAndroid{
         grid-area: 2;
+        width: 100%;
     }
 
     #wrapperOutputFieldButtons {
