@@ -54,6 +54,7 @@
         grid-template-rows: auto auto 1fr;
         grid-template-columns: 1fr;
         /*height: 100%;*/
+        width: 100%;
     }
     h4,#texForFieldAndroid{
         grid-area: 1;
