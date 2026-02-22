@@ -112,8 +112,11 @@ button:active{
 
 h4{
     margin-bottom: 0.5rem;
+    width: 68%;
 }
-
+#texForFieldAndroid{
+    width: 68%;
+}
 #wrapperButtons{
     display: flex;
     flex-direction: column;
@@ -158,7 +161,7 @@ option{
 }
 #texForFieldAndroid{
     display: block;
-    width: 64%;/* от wrapper*/
+    width: 85%;/* от wrapper*/
     /*min-height: 1.5rem;*/
     text-align: justify;
     color: #5c5c5c;

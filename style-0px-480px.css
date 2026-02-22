@@ -61,6 +61,7 @@
     }
     h4{
         grid-area: 1;
+        width: 100%;
     }
     #texForFieldAndroid{
         grid-area: 2;

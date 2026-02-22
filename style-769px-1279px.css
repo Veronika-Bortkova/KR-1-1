@@ -28,4 +28,8 @@
         grid-template-columns: 75% 25%;
         max-height: 85%;
     }
+    h4, #texForFieldAndroid{
+        width: 63.8%;
+    }
+
 }
