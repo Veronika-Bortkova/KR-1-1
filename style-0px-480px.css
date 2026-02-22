@@ -8,7 +8,7 @@
         display: grid;
         grid-template-rows: auto 1fr;
         min-height: 90vh;
-        min-height: 95dvh;
+        min-height: 85dvh;
         margin: 0.5rem auto;
     }
     h1{
