@@ -7,8 +7,9 @@
         padding: 0.6rem;
         display: grid;
         grid-template-rows: auto 1fr;
-        min-height: 90vh;
-        min-height: 90dvh;
+        /*min-height: 90vh;*/
+        /*min-height: 90dvh;*/
+        height: 100dvh;
         margin: 0.5rem auto;
     }
     h1{
