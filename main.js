@@ -7,6 +7,8 @@ let btns = document.getElementsByTagName("button");
 let input = document.getElementById("InputNameValuePair");
 let divDeleteText = document.getElementById("deleteText");
 let pTexForFieldAndroid = document.getElementById("texForFieldAndroid");
+let buttonSortByName = document.getElementById("SortByName");
+let select = document.getElementById("myList");
 
 
     input.addEventListener("dblclick", function (){//настраиваю, чтобы по двойному щелчку ЛКМ выделялось все содержание инпута
@@ -42,18 +44,46 @@ form.addEventListener("submit",function (ev){
             }
         }
             if (arrNumberEqualSigns.length!=1){
-                DivInCorrectFormat.innerText = "Enter the information in the correct format";// если в строке нет знака "=" или их больше одного, выдаю сообщение об ошибке
+                DivInCorrectFormat.innerText = "Enter the information in the correct format";// если в строке нет знака "=" или их больше одного, выдаю сообщение о том, чтобы ввели текст в правильном формате
             } else {
-                let Name_Value = value.split("=");
-                if (!/^[\p{L}\p{N}][\p{L}\p{N}]*\s*$/u.test(Name_Value[0]) || !/^\s*[\p{L}\p{N}]+$/u.test(Name_Value[1])){//делаю проверку строк до знака равно и после. Строка находящаяся до знака "=" должна начинаться только с численно-буквенных символов, далее содержать любое (в том числе ноль) кол-во буквенно-числовых символов, конец строки - любое кол-во пробелов. После знака "=" строка должна начинаться с любого кол-ва пробелов (в том числе ноль - ни одного пробела), далее любое кол-во буквенно-численных символов, но не менее одного символа. Юникод флаг для того чтобы работало для букв и чисел любого алфавита.
+                let Name_Values = value.split("=");
+                if (!/^[\p{L}\p{N}][\p{L}\p{N}]*\s*$/u.test(Name_Values[0]) || !/^\s*[\p{L}\p{N}]+$/u.test(Name_Values[1])){//делаю проверку строк до знака равно и после. Строка находящаяся до знака "=" должна начинаться только с численно-буквенных символов, далее содержать любое (в том числе ноль) кол-во буквенно-числовых символов, конец строки - любое кол-во пробелов. После знака "=" строка должна начинаться с любого кол-ва пробелов (в том числе ноль - ни одного пробела), далее любое кол-во буквенно-численных символов, но не менее одного символа. Юникод флаг для того чтобы работало для букв и чисел любого алфавита.
                     DivInCorrectFormat.innerText = "Enter the information in the correct format";
                  } else{
                     DivInCorrectFormat.innerText =" ";//убираю сообщение об ошибке
                     let optionPair = document.createElement("option");
-                    optionPair.innerText =(Name_Value[0]+"="+Name_Value[1]).replaceAll(" ","");//формирую строку, которую кладем в список, убираю пробелы перед и до знака "="
+                    optionPair.innerText =(Name_Values[0]+"="+Name_Values[1]).replaceAll(" ","");//формирую строку, которую кладем в список, убираю пробелы перед и до знака "="
                     selectNameValue.append(optionPair);
                      }
             }
+})
+
+buttonSortByName.addEventListener("click", function (){
+    let arrNameValue = Array.from(select.options).map(value => value.value.split("="));
+    let arrName = arrNameValue.map(value => value[0]).sort((a,b) =>a.localeCompare(b, undefined, { numeric: true}));//sensitivity: 'base'
+    console.log(arrName);
+
+
+
+
+    // let arrOptions = [];
+    // for (const opt of select.options) {
+    //     arrOptions.push(opt.value);
+    // }
+    // console.log(arrOptions);
+
+
+    // let arrName = [];
+    // for (const nameValue of arrOptions) {
+    //     let numberQ = nameValue.indexOf("=",0);
+    //     let name = nameValue.slice(0,numberQ);
+    //     arrName.push(name);
+    // }
+    // console.log(arrName);
+
+
+// let slice =  joinArrs.slice(0,3); //Вырезает кусок массива по указанным индексам - с первого указанного по последний НЕ включая последний указанный индекс, изначальный массив НЕ меняется
+
 })
 
 
