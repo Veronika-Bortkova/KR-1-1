@@ -15,7 +15,7 @@
     }
 
     #inCorrectFormat {
-        width: 64%; /* от wrapper*/
+        width: 64%;
         min-height: 3rem;
         margin-bottom: 0.5rem;
     }

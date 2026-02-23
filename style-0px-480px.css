@@ -8,7 +8,6 @@
         display: grid;
         grid-template-rows: auto 1fr;
         min-height: 85vh;
-        min-height: 85vh;
         margin: 0.5rem auto;
     }
     h1{
@@ -43,11 +42,11 @@
         font-size: 1.1rem;
     }
     #inCorrectFormat{
-        width: 100%;/* от wrapper*/
+        width: 100%;
         min-height: 2.5rem;
         margin-bottom: 0;
     }
-/*--------------------------------------------------------------------*/
+/*------------------------BottomBlok--------------------------------------------*/
     h4{
         font-size: 1.1rem;
         margin-bottom: 0;
@@ -56,7 +55,6 @@
         display: grid;
         grid-template-rows: auto auto 1fr;
         grid-template-columns: 1fr;
-        /*height: 100%;*/
         width: 100%;
     }
     h4{
@@ -82,7 +80,6 @@
     #outputField{
         width: 100%;
         margin-bottom: 0.5rem;
-        /*min-height: 10%;*/
     }
     #delete{
         margin-top: 0.5rem;
